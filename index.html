@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QR Attendance System</title>
+</head>
+<body>
+
+<h1>QR Attendance System</h1>
+
+<input type="text" id="name" placeholder="Student Name">
+
+<br><br>
+
+<input type="text" id="roll" placeholder="Roll Number">
+
+<br><br>
+
+<button onclick="markAttendance()">
+Submit Attendance
+</button>
+
+<p id="result"></p>
+
+<script>
+function markAttendance(){
+let name=document.getElementById("name").value;
+let roll=document.getElementById("roll").value;
+
+document.getElementById("result").innerHTML=
+"Attendance Marked Successfully";
+}
+</script>
+
+</body>
+  </html>
